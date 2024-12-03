@@ -2,24 +2,24 @@ import re, os, time
 id_pattern = re.compile(r'^.\d+$') 
 
 class Config(object):
-    STRING_SESSION = "your_generated_session_string"
+    STRING_SESSION = "1AZWarzcBuwwbs6gs9lNA6uVW1g1BZkZnxKLZp2gwSJ-HKV2niepAY3SQGFpNis65WKljBhWyWC_nIt_hx7UFkB1PBnY7VY6V9h5FOiaQse3UPGtC2pMJkZORxqKjjk49TEj3GhnqJJ3GlKDRSz8L9DQ8Aj8gvPs-QmW1c8CutwaqX76fducbGLwJ5myImTJGKb83rnqksTF7TGAZS3RD9SJhAnqlM3pdFCvLndsJle_PXJ5cpZFQHfmpDbpByPYDnnuA4hZ_ul4F0nTs5p__hgPypvLTk4b_eiwsIEYEHViKZ3eKhAlbY5gnVczCWFOEuAv77dB048X1tj2ZFfFvqgna5wOgB7s="
 
     # pyro client config
-    API_ID    = os.environ.get("API_ID", "")
-    API_HASH  = os.environ.get("API_HASH", "")
-    BOT_TOKEN = os.environ.get("BOT_TOKEN", "") 
+    API_ID    = os.environ.get("API_ID", "27672739")
+    API_HASH  = os.environ.get("API_HASH", "f48d0da94f2622364ab24eb0d911903c")
+    BOT_TOKEN = os.environ.get("BOT_TOKEN", "8088534251:AAFwOd8-S6NCucBb-unMGh4QZKYabU3Sq7g") 
 
     # database config
-    DB_NAME = os.environ.get("DB_NAME","LKD_AK")     
-    DB_URL  = os.environ.get("DB_URL","")
+    DB_NAME = os.environ.get("DB_NAME","khaanbarwaani")     
+    DB_URL  = os.environ.get("DB_URL","mongodb+srv://khaanbarwaani:qL47JyUNrzSRp2Aj@cluster0.qgucx.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
  
     # other configs
     BOT_UPTIME  = time.time()
     START_PIC   = os.environ.get("START_PIC", "https://i.ibb.co/ZLbRGmT/Picsart-24-02-16-14-30-48-873.png")
-    ADMIN       = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '15502786').split()]
+    ADMIN       = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '5069198943').split()]
     # -- FORCE_SUB_CHANNELS = ["BotzPW","AshuSupport","AshutoshGoswami24"] -- # 
-    FORCE_SUB_CHANNELS = os.environ.get('FORCE_SUB_CHANNELS', 'Old_Bollywood_movie_HD').split(',')
-    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", ""))
+    FORCE_SUB_CHANNELS = os.environ.get('FORCE_SUB_CHANNELS', '-1002434765617').split(',')
+    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-1002318997215"))
     PORT = int(os.environ.get("PORT", "8040"))
     
     # wes response configuration     
